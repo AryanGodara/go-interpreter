@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strings"
 )
 
 var hadError bool = false
@@ -34,7 +33,8 @@ func RunPrompt() {
 }
 
 func run(source string) {
-	tokens := strings.Split(source, " ")
+	scanner := New(source)
+	tokens := scanner.ScanTokens()
 	for _, token := range tokens {
 		fmt.Println(token)
 	}
