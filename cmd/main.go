@@ -1,10 +1,10 @@
-package glox
+package main
 
 import (
 	"fmt"
 	"os"
 
-	glox "github.com/aryangodara/go-interpreter"
+	glox "github.com/aryangodara/go-interpreter/lox"
 )
 
 func main() {

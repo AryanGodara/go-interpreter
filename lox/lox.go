@@ -1,4 +1,4 @@
-package gointerpreter
+package lox
 
 import (
 	"fmt"

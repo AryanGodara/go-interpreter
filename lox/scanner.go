@@ -1,6 +1,7 @@
-package gointerpreter
+package lox
 
 import (
+	"fmt"
 	"strconv"
 )
 
@@ -232,6 +233,7 @@ func (s *scanner) convertToFloat64(str string) float64 {
 	res, err := strconv.ParseFloat(str, 64)
 
 	if err != nil {
+		fmt.Println("string = ", str)
 		Error(s.line, "Error converting string to float64")
 	}
 
